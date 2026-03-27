@@ -1,0 +1,23 @@
+<!-- intia. two variables in increament both the variable each time and display the addition of both the vari. and intervel of 1s. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=2
+        var b=3
+        setInterval(function()
+        {
+            var c=a+b
+            a++
+            b++
+            document.getElementById("abc").innerHTML=c
+        },1000)
+    </script>
+ </head>
+ <body>
+    <p id="abc"></p>
+ </body>
+ </html>

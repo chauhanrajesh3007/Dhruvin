@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function main(cb)
+        {
+            console.log("Perform operation 1")
+            setTimeout(function()
+            {
+                console.log("opration completed")},1000);
+                console.log("Perform operation 2")
+        }
+        function callback_fun(result)
+        {
+            console.log("Result"+result)
+        }
+        main(callback_fun)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

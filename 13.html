@@ -1,0 +1,57 @@
+<!-- Write a code to perform the task as asked below:
+ 1. Add 3 buttons
+ 2. Increase button to increase the fonts ,it should stop increasing the font when font size reaches to 100px till
+    stop button is clicked
+ 3. Decrease button to decrease the fonts ,it should stop decreasing the font when the font size reaches to 15px or
+    stop button is clicked
+ 4. Stop button to stop increasing or decreasing the font
+ 5. The increase or decreasing interval is of 100ms (default font size is 50px)    
+  -->
+
+<html>
+  <head>
+    <script>
+      var font = 50;
+      function f(font) 
+      {
+        t.style.fontSize = font + "px";
+        t.style.color = "red";
+      }
+      function increase()
+      {
+        a= setInterval(function () {
+          if (font <= 100) 
+          {
+            f(font++);
+          }
+        }, 100);
+      }
+
+      function f(font) 
+      {
+        t.style.fontSize = font + "px";
+        t.style.color = "green";
+      }
+      function decrease() 
+      {
+        b = setInterval(function () {
+          if (font >= 15) 
+          {
+            f(font--);
+          }
+        }, 100);
+      }
+      function stop()
+      { 
+        clearInterval(a)
+        clearInterval(b)
+      }
+    </script>
+  </head>
+  <body>
+    <p id="t">Hii</p>
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">Decrease</button>
+    <button onclick="stop()">Stop</button>
+  </body>
+</html>

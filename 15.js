@@ -1,0 +1,7 @@
+var fs=require("fs")
+//fs.writeFileSync("D1.txt","25,10,50,30,60,40")
+const b=fs.readFileSync('D1.txt','utf-8')
+console.log(b)
+const a=b.split(",")
+const d=a.sort((a,b)=>a-b)
+console.log(d)

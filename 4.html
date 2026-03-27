@@ -1,0 +1,21 @@
+<!-- write 1 json string date propertity same and print date formate is ist while clicking on button -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function call()
+        {
+            let obj=JSON.parse('{"name":"Dhruvin","age":19,"DOB":"2007-09-21"}')
+            d=new Date(obj.DOB)
+            document.getElementById("demo").innerHTML=d
+        }
+    </script>
+ </head>
+ <body>
+    <p id="demo"></p>
+    <button onclick="call()">on click</button>
+ </body>
+ </html>

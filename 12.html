@@ -1,0 +1,31 @@
+<!-- write a code to increase the font size at interval of 50ms and should stop incre. when the font size reaches to 50px.this task should be perform when you click on"increa."button on browser Default font size is 15px -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var size=15
+        function fun(size)
+        {
+            abc.style.fontSize=size+'px';
+            abc.style.color='blue';
+        }
+        function fun1()
+        {
+        setInterval(function()
+        {
+            if(size<=50)
+        {
+            fun(size++)
+        } 
+            document.getElementById("abc").innerHTML=c
+        },50)}
+    </script>
+ </head>
+ <body>
+    <p id="abc">Hello</p>
+    <button type="button" onclick="fun1()">size</button>
+ </body>
+ </html>

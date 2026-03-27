@@ -1,0 +1,5 @@
+{"d":{"a":10,"b":20,"c":[30,10]}}
+ add:30
+ sub:10
+ multi:300
+ add all element:340
